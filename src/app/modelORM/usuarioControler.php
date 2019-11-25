@@ -64,6 +64,7 @@ class UsuarioController implements IApiControler
                 return $this->ModificarAlumno($usuario,$datos,$response);
                 break;
             case 'profesor':
+                return $this->ModificarProfesor($usuario, $body, $response);
                 break;
             case 'admin':
                 break;
@@ -80,6 +81,16 @@ class UsuarioController implements IApiControler
         }
         $alumno->save();
         return $response->withJson($alumno, 200);
+    }
+
+    public function ModificarProfesor($profesor, $body, $response)
+    {
+        $profesor = Usuario::find($profesor['id']);
+        if (array_key_exists("email", $body)) {
+            $profesor->email = $body["email"];
+        }
+        $profesor->save();
+        return $response->withJson($profesor, 200);
     }
 
     public function Login($request,$response,$args){
