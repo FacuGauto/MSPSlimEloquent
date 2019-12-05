@@ -25,10 +25,3 @@ Run this command in the application directory to run the test suite
 	php composer.phar test
 
 That's it! Now go build something cool.
-
-https://github.com/AlejandroLaborde/SP_Practica_ProgIII/tree/master/Parcial_ProgramacionIII
-https://github.com/gabrielivan/ProgramacionIII/tree/master/Practica_Segundo_Parcial
-https://github.com/Seba1705/Programacion-III
-https://github.com/lionelherrerobattista/Programacion-III/tree/master/01-Clases/clase_13
-https://github.com/upszot/prog3_2c/tree/master/Practica_Segundo_Parcial_tanodam
-https://jwt.io/
